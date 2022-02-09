@@ -11,8 +11,8 @@ export const HomePage = () => {
       </h1>
       <h2 className="my-8">
         Run{" "}
-        <span className="bg-gray-400 py-1 rounded-md px-2 text-white italic">
-          "yarn storybook"
+        <span className="bg-gray-400 rounded-md py-1 px-3 text-white text-sm">
+          yarn storybook
         </span>{" "}
         to run Storybook
       </h2>
