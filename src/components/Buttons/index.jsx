@@ -17,9 +17,9 @@ export const Button = (props) => {
 
   return (
     <button
-      className={`px-4 py-3 mx-2 ${setColor()} text-white rounded-md ${
-        props.className
-      }`}
+      className={`${
+        props.wide && "w-full"
+      } px-4 py-3 ${setColor()} text-white rounded-md ${props.className}`}
       onClick={props.onClick}
       size={props.size}
     >
@@ -34,6 +34,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   color: PropTypes.oneOf(["primary", "secondary", "accent"]),
   className: PropTypes.string,
+  wide: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -42,4 +43,5 @@ Button.defaultProps = {
   onClick: null,
   color: "primary",
   className: "",
+  wide: false,
 };
